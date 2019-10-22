@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "serve": "http-server ./src",
+    "build": "parcel ./src/index.html"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "mocha": "^6.2.2",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "tabs.js": "^1.0.0"
+  }
 }
