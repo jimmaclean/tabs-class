@@ -1,0 +1,32 @@
+.tabs-wrap {
+    border: 1px solid grey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  .tabs-wrap > * {
+    padding: 0.4em 1em;
+    user-select: none; 
+    cursor: pointer;
+  }
+  .tabs-wrap > *:hover {
+    text-decoration: underline;
+  }
+  .tabs-wrap > *[data-tab-active="true"] {
+    color: blue;
+  }
+  
+  .box {
+    display: none;
+    height: 300px;
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  .box[data-tab-active="true"]{
+    display: block;
+  }
+  
+  /* .is-active {
+    background: red;
+    color: red;
+  } */
